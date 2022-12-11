@@ -1,0 +1,139 @@
+body
+{ 
+    background-color: rgb(175, 214, 246);
+}
+h2
+{ 
+    font-family: 'Rubik Spray Paint', cursive;
+    color:rebeccapurple;
+    font-size: 30px;
+}
+p{
+font-family: 'Bebas Neue', cursive;
+color: rgb(229, 153, 12);}
+a{ 
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive;
+    color:aqua;
+}
+a:hover
+{ 
+    color: yellow;
+}
+li{ 
+    font-family: 'Kaushan Script', cursive;
+    color:rgb(165, 42, 165);
+}
+li:nth-child(even)
+{ 
+    background-color: antiquewhite;
+    margin-right: 50px;
+}
+li:nth-child(odd)
+{
+    background-color: rgb(205, 126, 22);
+    margin-right: 50px; 
+}
+li:nth-child(even):hover
+{ 
+    background-color: rgb(85, 135, 125);
+    margin-right: 50px; 
+}
+li:nth-child(odd):hover
+{ 
+    background-color:rgb(97, 61, 84);
+    margin-right: 50px; 
+}
+.whole
+{ 
+    display: flex;
+    flex-direction:row;
+   
+}
+section
+{ 
+    width:79%;
+}
+aside
+{ 
+    width: 29%;
+    background-color: rgb(232, 199, 116);
+    margin-left: 5px;
+    border-radius: 12px;
+
+}
+.sidebar-item
+{ 
+    border: 2px solid rgb(235, 158, 15);
+    border-radius: 12px;
+    margin:5px 4px 6px 4px;
+}
+.sidebar-item p
+{ 
+color: white;
+}
+
+.sidebar-item:hover
+{ 
+    background-color: rgb(167, 53, 193);
+    
+    color:white;
+    padding: 10px;
+    transform: translate(-20px,0px);
+}
+
+.images
+{ 
+    image-resolution:initial;
+    display:flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 69%;
+   
+}
+.image-items
+{ 
+    padding: 10px;
+  
+    border-radius:56px;
+    transition: padding 600ms ease-in;
+
+}
+.image-items:hover
+{ 
+    transform: translate(10px,20px);
+    padding: 40px;
+}
+.main-header
+{ 
+    font-family: 'Rubik Puddles', cursive;
+    color: whitesmoke;
+    background: linear-gradient(-40deg,rgb(223, 226, 5),rgb(138, 6, 172));
+    text-align: center;
+    margin: 0px 100px 40px 100px;
+    padding:15px 15px;
+    border-radius: 16px;
+    animation: title 2s ease-in-out 2s infinite alternate-reverse;
+}
+
+@keyframes title {
+    0%
+    { 
+        background: linear-gradient(-40deg,rgb(223, 226, 5),rgb(138, 6, 172));
+        padding:15px 15px;
+    }
+     50%
+     { 
+        background: linear-gradient(-40deg,rgb(214, 35, 35),rgb(35, 200, 203));
+        padding:15px 15px;
+        transform: translate(50px,30px);
+     }
+    100%
+    {
+        background: linear-gradient(-40deg,rgb(30, 31, 80)rgb(35, 200, 203));
+        padding:15px 15px;
+        color:blanchedalmond;
+        transform: translate(50px,-30px);
+
+    }
+}
